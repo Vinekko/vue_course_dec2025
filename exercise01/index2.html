@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="apps2.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sobre Mí</h1>
+    </header>
+    <section id="yo">
+        <h2>Cosas sobre mí</h2>
+        <p>Nombre: {{ nombre }}</p>
+        <p>Apellido: {{ apellido }}</p>
+        <p>Edad: {{ edad }}</p>
+        <p>Edad Futura: {{ sumarEdad() }}</p>
+        <p>Mi Película favorita es: <a v-bind:href="movie">Pokémon</a></p>
+        <p>Un número aleatorio: {{ changeNumber() }}</p>    
+    </section>
+    <main>
+        
+    </main>
+</body>
+</html>
