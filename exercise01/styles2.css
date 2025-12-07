@@ -1,117 +1,57 @@
 body {
-    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
+    background: linear-gradient(135deg, #432a7c 0%, #e0e5ec 100%);
     color: #333;
-    line-height: 1.6;
+    line-height: 0.9;
 }
 
 header {
-    background-color: #2c3e50;
-    color: #ffffff;
-    padding: 1.5rem 0;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #3498db;
-}
-
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Centers inline content like text and images */
+    display: flex; /* Use flexbox for more robust centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically if header has a defined height */
+    padding: 2px; /* Add some padding for spacing */
+    max-width: 440px; /* Match section width for consistency */
+    margin: 20px auto 0; /* Center the header itself, add margin to bottom */
+    background-color: #a17cc0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between header and section */
 }
 
 section {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically if section has defined height */
+    min-height: calc(1vh - 40px); /* Adjust as needed, considering body padding */
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto; /* Centers the section itself on the page */
+    background-color: #a17cc0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    gap: 20px; /* Space between the p elements */
 }
 
-section:last-child {
-    border-bottom: none;
-}
-
-h2 {
-    color: #2c3e50;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    border-left: 4px solid #3498db;
-    padding-left: 10px;
-}
-
-.card {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-bottom: 1rem;
+p {
+    background-color: #f7e6ff; /* Light blue background for the box */
+    border: 1px solid #350d55; /* Matching border */
+    padding: 15px 25px;
+    margin: 0; /* Reset default margin, gap handles spacing */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    max-width: 600px; /* Limit width for readability */
+    text-align: center;
+    color: #3a0d0d;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+p:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #2c3e50;
-    color: #ffffff;
-    margin-top: 2rem;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    main {
-        padding: 1rem;
-        margin: 10px auto;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background-color: #d1edff; /* Slightly darker on hover */
 }
